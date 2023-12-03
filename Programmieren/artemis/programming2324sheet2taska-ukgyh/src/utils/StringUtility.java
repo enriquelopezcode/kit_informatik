@@ -16,8 +16,6 @@ public class StringUtility {
     public static boolean isPalindrome(String word) {
         String reversed = reverse(word);
         return word.equals(reversed);
-
-
     }
 
     public static String removeCharacter(String word, int index) {
@@ -37,7 +35,6 @@ public class StringUtility {
         }
 
         return new String(outputArray);
-
     }
 
     public static boolean isAnagram(String word, String otherWord) {
@@ -57,7 +54,6 @@ public class StringUtility {
                     } else if (z == otherWordArray.length - 1) {
                         return false;
                     }
-
                 }
             }
         } else {
@@ -65,13 +61,10 @@ public class StringUtility {
         }
         //If all characters are contained in both Strings, they are Anagrams of each other
         return true;
-
-
     }
 
     public static String capitalize(String word) {
         return word.substring(0, 1).toUpperCase() + word.substring(1);
-
     }
 
     public static int countCharacter(String word, char character) {
@@ -85,5 +78,4 @@ public class StringUtility {
         }
         return count;
     }
-
 }
