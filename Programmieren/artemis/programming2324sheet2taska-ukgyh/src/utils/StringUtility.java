@@ -50,6 +50,7 @@ public class StringUtility {
                 //Searching for the character in other String
                 for (int z = 0; z < otherWordArray.length; z++) {
                     if (otherWordArray[z] == character) {
+                        
                         //If character is found, set index to default value, so it isn't compared again
                         otherWordArray[z] = '\u0000';
                         break;
