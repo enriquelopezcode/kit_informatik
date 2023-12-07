@@ -39,19 +39,22 @@ public class StringUtility {
     }
 
     public static boolean isAnagram(String word, String otherWord) {
+        
         //If two Strings are not the same length they can't be Anagrams of each other
         if (word.length() == otherWord.length()) {
             char[] wordArray = word.toCharArray();
             char[] otherWordArray = otherWord.toCharArray();
 
             for (char character : wordArray) {
+                
                 //Searching for the character in other String
                 for (int z = 0; z < otherWordArray.length; z++) {
                     if (otherWordArray[z] == character) {
                         //If character is found, set index to default value, so it isn't compared again
                         otherWordArray[z] = '\u0000';
                         break;
-                        //If character isn't found by the end the Strings are not Anagrams of each other
+                        
+                    //If character isn't found by the end the Strings are not Anagrams of each other
                     } else if (z == otherWordArray.length - 1) {
                         return false;
                     }
