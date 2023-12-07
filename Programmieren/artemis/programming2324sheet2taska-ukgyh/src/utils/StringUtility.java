@@ -27,6 +27,7 @@ public class StringUtility {
         for (int i = 0; i < inputArray.length; i++) {
             if (i < index) {
                 outputArray[i] = inputArray[i];
+                
                 //index is shifted to the left to replace removed index
             } else if (i > index) {
                 outputArray[i - 1] = inputArray[i];
