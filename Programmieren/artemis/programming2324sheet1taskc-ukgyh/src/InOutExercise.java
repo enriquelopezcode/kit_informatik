@@ -31,6 +31,7 @@ public class InOutExercise {
 
         }
 
+        scanner.close();
 
         // printing the final String
         System.out.println(concatenatedWord);
