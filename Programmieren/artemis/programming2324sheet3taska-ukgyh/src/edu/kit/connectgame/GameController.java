@@ -121,7 +121,8 @@ public class GameController {
             playerMove = InputOutput.readMove();
 
         }
-
+        
+    InputOutput.closeScanner();
 
     }
 
